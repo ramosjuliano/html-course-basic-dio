@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Curso DIO.me</title>
+</head>
+
+<body>
+    <h1 id="inicio-pagina">HTML Básico</h1>
+    <hr>
+    <p>A página atual foi criada para aplicar os conhecimentos adquiridos no curso de HTML básico ministrado pela DIO.me
+        onde, quem saiba, possa servir de conteúdo para outra pessoa que queira aprender!</p>
+    <blockquote> "A forma mais efetiva de aprender é ensinar." - William Glasser </blockquote>
+    <h2 id="indice">Índice</h2>
+    <ul>
+        <li><a href="#head">Head</a></li>
+        <li><a href="#body">Body</a></li>
+        <li><a href="#titulos">Títulos "h1" -> "h6"</a></li>
+        <li><a href="#paragrafos">Parágrafos</a></li>
+        <li><a href="#formatacoes">Formatações Básicas</a></li>
+        <li><a href="#listas">Listas Ordenedas e Listas Desordenadas</a></li>
+        <li><a href="#outras-tags">Links e Navegabilidade</a></li>
+        <li><a href="#links">Outras tags</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+
+    <h3 id="head"> Head </h3>
+        <p> No "Head" traremos para aplicação aquilo que será carregado antes e preparará o conteúdo para o usuário.</p>
+        <p>No nosso caso é bem simples a trás pequenas configurações e o título da página, que estará exibido no título da aba.</p>
+
+    <h3 id="body"> Body </h3>
+        <p> O "Body" já é responsável por trazer as informações que serão exibidas ao usuário.</p>
+        <p> Essas informações e sua organização serão tratadas no decorrer da página.</p>
+
+    <h3 id="titulos"> Títulos "h1" -> "h6" </h3>
+
+    <p> Os títulos são tags fundamentais para organização do seu arquivo HTML. Nelas organizaremos nossos conteúdos de
+        acordo com a sua hierarquia dentro do nosso documento.</p>
+    <p> Nossas tags são ordenadas de acordo com o seu número. Sendo <strong>1</strong> o título de <mark>mais
+            relevância</mark> e <strong>6</strong> o de <mark>menor relevância</mark>. </p>
+    <p> Para facilitar, siga a seguinte lista ordenada de hierarquia (Do maior ao menor).</p>
+    <ol>
+        <li> h1 - <i>Maior relevância</i></li>
+        <li> h2 </li>
+        <li> h3 </li>
+        <li> h4 </li>
+        <li> h5 </li>
+        <li> h6 - <i>Menor relevância</i></li>
+    </ol>
+
+    <h3> Parágrafos</h3>
+    <p> A tag "p" é utilizada para delimitar parágrafos dos conteúdos do nosso documento HTML. Ele tem papel fundamental
+        na organização de marcação de contexto.</p>
+
+    <h3 id="formatacoes"> Formatações Básicas </h3>
+    <p> Existem diversos tipos de formatações que podem ser utilizadas diretamente no HTML sem necessidade de delegar
+        para o CSS. Algumas delas citaremos aqui!</p>
+    <h4> Negrito </h4>
+    <p> O texto destacado entre as tags "strong" são formatadas como <strong>negrito</strong> </p>
+    <h4> Itálico </h4>
+    <p>O texto destacado entre as tags "i" são formatados como <i>itálico</i></p>
+    <h4> Sublinhado </h4>
+    <p>O texto destacado entre as tags "u" são formatados como <u>sublinhado</u></p>
+    <h4> Texto Pequeno </h4>
+    <p>O texto destacado entre as tags "small" são formatadas num texto <small>pequeno</small></p>
+    <h4> Marcação </h4>
+    <p>O texto destacado entre as tags "mark" são formatadas como uma espécie de <mark>marca texto</mark></p>
+
+
+    <h3 id="listas"> Listas Ordenadas e Listas Desordenadas</h3>
+    <p> A listas no HTML são divididos em dois subgrupos. As listas ordenadas, que devem ser usadas para listagem de
+        itens com graus determinados de relevância e ordem. As listas Desordenadas já devem ser usadas em situações de
+        divisões sem critérios definidos.</p>
+    <p>Abaixo apresentaremos os dois exemplos</p>
+    <h4>Listas Ordenadas</h4>
+    <p>A lista de classificação de um campeonato é ordenada do melhor para o pior.</p>
+    <ol>
+        <li>Real Madrid</li>
+        <li>Barcelona</li>
+        <li>Porto</li>
+        <li>Paris Saint Germain</li>
+        <li>Milan</li>
+        <li>Ajax</li>
+    </ol>
+    <h4>Listas Desordenadas</h4>
+    <p>Uma lista de compras não exige uma ordem...</p>
+    <ul>
+        <li>Ovos</li>
+        <li>Leite</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Massa</li>
+    </ul>
+
+    <h3 id="links"> Links e Navegabilidade </h3>
+    <p> Os links ou tags "a" podem levar o usuário da página para referências dentro da própria página, outras páginas
+        do mesmo recurso ou, até então, outras páginas externas.</p>
+    <h4> Âncora </h4>
+    <p> A Âncora vai nos levar para outra parte da mesma página com base na referência estabelecida nessa conexao. No
+        nosso caso, voltaremos para o índice clicando <a href="#indice">aqui</a>.</p>
+    <h4> Outra página - Interno </h4>
+    <p>O link interno é já é um recurso utilizado para circular entre páginas do mesmo produto. Nesse caso o recurso é o
+        mesmo "a", porém usamos "_self" para o atributo target. Nesse caso a aplicação usará a mesma aba para acessar os
+        recursos, exatamente como ao clicar aqui <a href="exemplo.html" target="_self">aqui</a>.</p>
+    <h4> Outra página - Externo </h4>
+    <p>Já o link externo leva o usuário para uma página fora da aplicação. Nesse exemplo vou levá-los ao site do <a
+            href="https://www.google.com/" target="_blank">Google</a>. Nesse caso usaremos "_blank" no atributo target
+        para que a aplicação abra uma nova aba e mantenha nosso portal aberto na página atual. </p>
+
+    <h3 id="outras-tags"> Outras Tags </h3>
+    <p>Nessa etapa farei uma passagem rápida por outras tags também utilizadas no HTML.</p>
+    <h4>Tag "hr"</h4>
+    <p> Essa tag gera uma linha que serve como separação na página.</p>
+    <hr>
+    <h4>Tag "sub"</h4>
+    <p>O sub é aquele textinho que fica pequeno após determinado termo. O exemplo que lembro é o logaritmo... Log 5
+        <sub>2</sub>.</p>
+    <h4>Tag "sup"</h4>
+    <p>Já a tag "sup" é aquele clássico relacionado a referência no texto que será exibido no rodapé da página. Olha
+        para essa referência <sup>2</sup>."</p>
+    <h4>Tag "del"</h4>
+    <p>É utilizado no HTML para "rasurar" um texto determinado. No geral é utilizado para deixar explícito que
+        determinado texto não é mais válido e manter seu histórico explícito. Muito utilizado em atualização de textos
+        de leis onde determinados pontos foram modificados ou excluídos</p>
+    <p><del>A renovação da carteira de motorista é de 5 anos.</del></p>
+    <h4>Tag "abbr"</h4>
+    <p>Seu uso é simples. Ele é usado em palavras abreviadas, onde é possível incluir seu significado no atributo e
+        visualiza-lo ao posicionar o mouse sob a palavra em questão...</p>
+    <p>Um exemplo bem interessante é o significado de <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+    <h3 id="referencias"> Referências </h3>
+    <p> Aqui deixo algumas referencias para quem queira aprender HTML e outras ferramentas de desenvolvimento</p>
+    <ul>
+        <li><a href="https://web.dio.me/" target="_blank">DIO.me</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+    </ul>
+
+    <a href="#inicio-pagina"><small>Voltar para o início da página</small></a>
+</body>
+
+</html>
